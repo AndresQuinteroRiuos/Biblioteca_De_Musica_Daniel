@@ -40,11 +40,11 @@ public class Cancion {
     public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
-    Public Void  mostrarInfo(){
-    System.out.println("Titulo: "+titulo+
-    "Artista: "+artista+
-     "duracion:"+ "("+ duracion+  "S)");
-   
-    
+    public void mostrarInfo() {
+        System.out.println(
+            "Titulo: " + titulo + 
+            ", Artista: " + artista + 
+            ", Duracion: (" + duracion + "s)"
+        );
     }
 }

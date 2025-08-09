@@ -1,9 +1,8 @@
 package Servicio;
 
-import java.util.List;
-
 import Entidad.Cancion;
 import Interfaz.Reproductor;
+import java.util.List;
 
 
 
@@ -11,16 +10,16 @@ public class ReproductorCancion implements Reproductor {
 
     @Override
     public void reproducir(Cancion cancion) {
-        System.out.println("Reproduciendo la canción: " + cancion.getTitulo());
+        System.out.println("Reproduciendo la cancioon: " + cancion.getTitulo());
     }
 
     @Override
     public void pausar(Cancion cancion) {
-        System.out.println("Pausando la canción: " + cancion.getTitulo());
+        System.out.println("Pausando la cancion: " + cancion.getTitulo());
     }
 
     @Override
-    public void mostrarCanciones(list<Cancion> canciones) {
+    public void mostrarCanciones(List<Cancion> canciones) {
         if ( canciones.isEmpty()) {
             System.out.println("No hay canciones disponibles.");
             
@@ -34,7 +33,7 @@ public class ReproductorCancion implements Reproductor {
     }
 
     @Override
-    public void agregarCancion(list<Cancion> canciones, Cancion cancion) {
+    public void agregarCancion(List<Cancion> canciones, Cancion cancion) {
         canciones.add(cancion);
         System.out.println("Canción agregada: " + cancion.getTitulo());
     }
@@ -50,14 +49,12 @@ public class ReproductorCancion implements Reproductor {
         
         for (Cancion c : canciones) {
             if (c.getTitulo().equalsIgnoreCase(titulo)) {
-                System.out.println("Canción encontrada: ");
+                System.out.println("Cancion encontrada: ");
                 c.mostrarInfo();
                return;
             }
         }
        
-            System.out.println("Canción no encontrada.");
+            System.out.println("Cancion no encontrada.");
         }
     }
-
-

@@ -1,16 +1,16 @@
-package interfaz;
+package Interfaz;
 
 import java.util.List;
 
-import entidad.Cancion;
+import Entidad.Cancion;
 
 public interface Reproductor {
 
-Void reproducir(Cancion cancion);
-Void pausar(Cancion cancion);
-Void mostrarCanciones(list<Cancion> canciones);
-void agregarCancion(list<Cancion> canciones, Cancion cancion);
-Void eliminarCancion(list<Cancion> canciones, String titulo);
-Void buscarCancion(list<Cancion> canciones, String titulo);
+    void reproducir(Cancion cancion);
+    void pausar(Cancion cancion);
+    void mostrarCanciones(List<Cancion> canciones);
+    void agregarCancion(List<Cancion> canciones, Cancion cancion);
+    void eliminarCancion(List<Cancion> canciones, String titulo);
+    void buscarCancion(List<Cancion> canciones, String titulo);
 
 }

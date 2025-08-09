@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -20,9 +19,9 @@ public class Principal {
 
 
         while (continuar) {
-            System.out.println("/n =========================  ");
-            System.out.println("/n ===||Menu biblioteca||===  ");
-            System.out.println("/n =========================  ");
+            System.out.println("\n =========================  ");
+            System.out.println("\n ===||Menu biblioteca||===  ");
+            System.out.println("\n =========================  ");
             System.out.println("1. Agregar cancion");
             System.out.println("2. Mostrar canciones");
             System.out.println("3. Buscar cancion");
